@@ -66,4 +66,12 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+    implementation("androidx.compose.ui:ui-text-google-fonts:1.7.1")
+
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.8.5")
+
+    implementation("androidx.compose.ui:ui:1.7.1")            // View system and basic Compose elements
+    implementation("androidx.compose.material:material:1.7.1")    // Material Design
+    implementation("androidx.compose.ui:ui-tooling-preview:1.7.1")
 }
