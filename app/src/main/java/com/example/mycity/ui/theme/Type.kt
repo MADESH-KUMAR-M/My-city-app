@@ -36,8 +36,8 @@ val Typography = Typography(
     ),
     bodyMedium = TextStyle(
         fontFamily = bodyFamily,
-        fontWeight = FontWeight.Normal,
-        fontSize = 16.sp
+        fontWeight = FontWeight.SemiBold,
+        fontSize = 20.sp
     ),
     bodySmall = TextStyle(
         fontFamily = bodyFamily,

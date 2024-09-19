@@ -3,7 +3,7 @@ package com.example.mycity.data
 import com.example.mycity.R
 import com.example.mycity.model.Details
 
-object data {
+object Data {
     val category = listOf(
         R.string.Coffee_shop,
         R.string.parks,
@@ -220,6 +220,7 @@ object data {
 
 
     }
+
 
 
 

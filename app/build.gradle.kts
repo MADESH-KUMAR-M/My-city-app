@@ -47,6 +47,7 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+
 }
 
 dependencies {
@@ -59,12 +60,10 @@ dependencies {
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
-    testImplementation(libs.junit)
-    androidTestImplementation(libs.androidx.junit)
-    androidTestImplementation(libs.androidx.espresso.core)
-    androidTestImplementation(platform(libs.androidx.compose.bom))
-    androidTestImplementation(libs.androidx.ui.test.junit4)
-    debugImplementation(libs.androidx.ui.tooling)
+    implementation(libs.androidx.navigation.compose)
+    implementation(libs.androidx.ui.test.junit4.android)
+    implementation(libs.androidx.navigation.testing)
+    testImplementation(project(":app"))
     debugImplementation(libs.androidx.ui.test.manifest)
     implementation("androidx.compose.ui:ui-text-google-fonts:1.7.1")
 
@@ -74,4 +73,24 @@ dependencies {
     implementation("androidx.compose.ui:ui:1.7.1")            // View system and basic Compose elements
     implementation("androidx.compose.material:material:1.7.1")    // Material Design
     implementation("androidx.compose.ui:ui-tooling-preview:1.7.1")
+
+    implementation("androidx.navigation:navigation-fragment-ktx:2.8.0")
+    implementation("androidx.navigation:navigation-ui-ktx:2.8.0")
+
+
+    androidTestImplementation(platform(libs.androidx.compose.bom))
+    androidTestImplementation(libs.ui.test.junit4)
+    androidTestImplementation("androidx.compose.ui:ui-test-junit4:1.7.1")
+    androidTestImplementation("androidx.navigation:navigation-testing:2.8.0")
+    androidTestImplementation("androidx.test.espresso:espresso-intents:3.6.1")
+    androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    debugImplementation("androidx.compose.ui:ui-test-junit4:1.7.1")
+
+
+    testImplementation("junit:junit:4.13.2") // Or latest version
+    testImplementation("org.hamcrest:hamcrest:2.2") // Or latest version
+
+    // Optional - Mocking library (highly recommended)
+    testImplementation("io.mockk:mockk:1.13.5") // Or latest version
+
 }

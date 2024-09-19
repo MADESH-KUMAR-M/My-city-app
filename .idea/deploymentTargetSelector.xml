@@ -3,11 +3,11 @@
   <component name="deploymentTargetSelector">
     <selectionStates>
       <SelectionState runConfigName="app">
-        <option name="selectionMode" value="DIALOG" />
-        <DropdownSelection timestamp="2024-09-15T20:29:08.509929700Z">
+        <option name="selectionMode" value="DROPDOWN" />
+        <DropdownSelection timestamp="2024-09-16T15:05:07.362790400Z">
           <Target type="DEFAULT_BOOT">
             <handle>
-              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\mades\.android\avd\Resizable_Experimental_API_34_2.avd" />
+              <DeviceId pluginId="LocalEmulator" identifier="path=C:\Users\mades\.android\avd\Resizable_Experimental_API_34_3.avd" />
             </handle>
           </Target>
         </DropdownSelection>
@@ -20,6 +20,9 @@
             </Target>
           </targets>
         </DialogSelection>
+      </SelectionState>
+      <SelectionState runConfigName="Preview">
+        <option name="selectionMode" value="DROPDOWN" />
       </SelectionState>
     </selectionStates>
   </component>
